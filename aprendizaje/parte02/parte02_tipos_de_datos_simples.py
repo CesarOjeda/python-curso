@@ -1,17 +1,17 @@
 # ============================================================ #
 #							  INDICE						   #
 # ------------------------------------------------------------ #
-#	Tipo de Dato int  ...................................   17 #
-#		Construccion de Valor Numerico Entero  ..........   27 #
-#		Operaciones Básicas  ............................   37 #
-#	Tipo de Dato float  .................................   56 #
-#		Construccion de Valor Numerico Flotante  ........   69 #
-#		Operaciones Básicas  ............................   78 #
-#	Tipo de Dato complex  ...............................   91 #
-#		Operaciones Básicas  ............................  103 #
-#	Tipo de Dato boolean  ...............................  121 #
-#		Construccion de Valor Booleano  .................  144 #
-#		Operaciones Básicas  ............................  158 #
+#	Tipo de Dato int  ................................   17-55 #
+#		Construccion de Valor Numerico Entero  .......      27 #
+#		Operaciones Básicas  .........................      37 #
+#	Tipo de Dato float  ..............................   56-90 #
+#		Construccion de Valor Numerico Flotante  .....      69 #
+#		Operaciones Básicas  .........................      78 #
+#	Tipo de Dato complex  ............................  91-120 #
+#		Operaciones Básicas  .........................     103 #
+#	Tipo de Dato boolean  ............................ 121-198 #
+#		Construccion de Valor Booleano  ..............     144 #
+#		Operaciones Básicas  .........................     158 #
 # ============================================================ #
 
 # ============================================================ #

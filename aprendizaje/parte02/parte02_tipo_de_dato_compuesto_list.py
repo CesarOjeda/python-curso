@@ -1,25 +1,25 @@
 # ============================================================ #
 #							  ÍNDICE						   #
 # ------------------------------------------------------------ #
-#	Tipo de Dato list  ...............................       ? #
-#	    Acceso a los Elementos  ......................       ? #
-#	        Acceso a Índices Positivos  ..............       ? #
-#	        Acceso a Índices Negativos  ..............       ? #
-#	        Acceso a Subsecciones  ...................       ? #
-#	        Desempaquetamiento  ......................       ? #
-#	        Acceso a Índice no Existente  ............       ? #
-#	            Indices Habilitados  .................       ? #
-#	            ERROR  ...............................       ? #
-#       Modificación  ................................       ? #
-#           Índices Positivos  .......................       ? #
-#           Índices Negativos  .......................       ? #
-#       Métodos  .....................................       ? #
-#           Inserción de Elementos  ..................       ? #
-#           Remoción de Elementos  ...................       ? #
-#           `count()` Contar las Ocurrencias  ........       ? #
-#           `reverse()` Inversión del Contenido  .....       ? #
-#	Iterar Por Medio de Ciclos while  ................       ? #
-#	Iterar Por Medio de Ciclos for  ..................       ? #
+#	Tipo de Dato list  ...............................  25-203 #
+#		Acceso a los Elementos  ......................   27-83 #
+#			Acceso a Índices Positivos  ..............      35 #
+#			Acceso a Índices Negativos  ..............      45 #
+#			Acceso a Subsecciones  ...................      52 #
+#			Desempaquetamiento  ......................      60 #
+#			Acceso a Índice no Existente  ............   68-83 #
+#				Indices Habilitados  .................      70 #
+#				ERROR  ...............................      77 #
+#		Modificación  ................................  84-109 #
+#			Índices Positivos  .......................      86 #
+#			Índices Negativos  .......................      96 #
+#		Métodos  ..................................... 110-203 #
+#			Inserción de Elementos  ..................     112 #
+#			Remoción de Elementos  ...................     134 #
+#			`count()` Contar las Ocurrencias  ........     175 #
+#			`reverse()` Inversión del Contenido  .....     194 #
+#	Iterar Por Medio de Ciclos while  ................     204 #
+#	Iterar Por Medio de Ciclos for  ..................     224 #
 # ============================================================ #
 
 # ============================================================ #
@@ -98,14 +98,12 @@ print(f'El primer elemento (Índice 0) de la lista es: {numeros[0]}\n')
 # ============================================================ #
 
 print(
-    'El último elemento (Índice -1) de la lista es: {}\n'.format(numeros[-1]))
+	'El último elemento (Índice -1) de la lista es: {}\n'.format(numeros[-1]))
 
 numeros[-1] = 12
 
-
-
 print(
-    'El último elemento (Índice -1) de la lista es: {}\n'.format(numeros[-1]))
+	'El último elemento (Índice -1) de la lista es: {}\n'.format(numeros[-1]))
 
 print('Contenido (Despues) `numeros`: {}'.format(numeros))
 
@@ -151,18 +149,18 @@ print('Contenido actual `numeros`:', numeros)
 
 print('Remover elementos con la funcion `pop()`')
 
-ultimo_elemento = numeros.pop()
+ultimoElemento = numeros.pop()
 
-print(f'\nSe ha eliminado {ultimo_elemento} de la lista `numeros`')
+print(f'\nSe ha eliminado {ultimoElemento} de la lista `numeros`')
 
 ocho = numeros.pop(numeros.index(8))
 
 print(f'\nSe ha eliminado {ocho} de la lista `numeros`')
 print('\nContenido actual `numeros`:', numeros)
 
-ultimo_elemento = numeros.pop(-1)
+ultimoElemento = numeros.pop(-1)
 
-print(f'\nSe ha eliminado {ultimo_elemento} de la lista `numeros`')
+print(f'\nSe ha eliminado {ultimoElemento} de la lista `numeros`')
 print('\nContenido actual `numeros`:', numeros)
 
 # numeros.pop(20) # Genera IndexError
@@ -212,16 +210,16 @@ print('\nIteración de Listas (Ciclo while):')
 i = 0
 
 while i < len(numeros):
-    print(f'\nÍndice: {i} - Valor: {numeros[i]}')
-    i += 1
+	print(f'\nÍndice: {i} - Valor: {numeros[i]}')
+	i += 1
 
 print('\nIteración de Listas (Ciclo while del último elemento al primero):')
 
 i = len(numeros) - 1
 
 while i >= 0:
-    print(f'\nÍndice: {i} - Valor: {numeros[i]}')
-    i -= 1
+	print(f'\nÍndice: {i} - Valor: {numeros[i]}')
+	i -= 1
 
 # ============================================================ #
 #                Iterar Por Medio de Ciclos for                #
@@ -230,20 +228,20 @@ while i >= 0:
 print('Iteracion de Listas (Ciclo for):')
 
 for i in range(0, len(numeros)):
-    print(f'\nIndice: {i} - Valor: {numeros[i]}')
+	print(f'\nIndice: {i} - Valor: {numeros[i]}')
 
 print('\nIteracion de Listas (Ciclo for del ultimo elemento al primero):')
 
 for i in range(len(numeros) - 1, -1, -1):
-    print(f'\nIndice: {i} - Valor: {numeros[i]}')
+	print(f'\nIndice: {i} - Valor: {numeros[i]}')
 
 print('\nIteración Elemento por Elemento de una Lista (Ciclo for):')
 
 for n in numeros:
-    print('\nValor: {}'.format(n))
+	print('\nValor: {}'.format(n))
 
 print('\nIteración por Índice y Elemento de una Lista (Ciclo for):')
 print('Funcion `enumerate()`')
 
 for i, v in enumerate(numeros):
-    print(f'\nIndice: {i} - Valor: {v}')
+	print(f'\nIndice: {i} - Valor: {v}')

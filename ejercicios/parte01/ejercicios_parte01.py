@@ -6,37 +6,17 @@ from math import pi
 # Ejercicio 1.1 - Versión Actual de Python Instalada en el      #
 # Sistema                                                       #
 # ============================================================= #
- 
-def versionActual():
-	return f'Su Versión de Python es: {version}'
 
-def infoVersion():
-	return 'Información de Versión: {}'.format(version_info)
-
-a = versionActual()
-b = infoVersion()
-
-# ~ print(a)
-# ~ print(b)
+print(version)
+print(version_info)
 
 # ============================================================= #
 # Ejercicio 1.2 - Obtener la Fecha y Hora Actuales del			#
 # Sistema										                #
 # ============================================================= #
 
-def fechaHoraActual():
-	fechaHoraActual = datetime.now()
-	return f'Fecha y Hora Actual en el Sistema: {fechaHoraActual}'
-
-def fechaHoraFormateada():
-	fechaHoraFormateada = datetime.now().strftime('%H:%M:%S %Y/%m/%d')
-	return f'Fecha y Hora Formateada en el Sistema: {fechaHoraFormateada}'
-
-c = fechaHoraActual()
-d = fechaHoraFormateada()
-
-# ~ print(c)
-# ~ print(d)
+print(f'Fecha y Hora Actual en el Sistema: {datetime.now()}')
+print(f'Fecha y Hora Formateada en el Sistema: {datetime.now().strftime("%H:%M:%S %Y/%m/%d")}')
 
 # ============================================================= #
 # Ejercicio 1.3 - Calcular el Área de un Círculo Dado el 		#

@@ -1,19 +1,19 @@
 # ============================================================ #
 #							  ÍNDICE						   #
 # ------------------------------------------------------------ #
-#	Tipo de Dato tuple  ..............................      19 #
-#		Acceso a los Elementos  ......................      28 #
-#		    Desempaquetamiento  ......................      37 #
-#	        Acceso a Índices Negativos  ..............      45 #
-#       Concepto de Inmutabilidad  ...................      54 #
-#       Construcción de una Tupla  ...................   69-84 #
-#           MODO A  ..................................      71 #
-#           MODO B  ..................................      82 #
-#       Operaciones Básicas  .........................      89 #
+#	Tipo de Dato tuple  ..............................  19-101 #
+#		Acceso a los Elementos  ......................   28-53 #
+#			Desempaquetamiento  ......................      37 #
+#			Acceso a Índices Negativos  ..............      45 #
+#		Concepto de Inmutabilidad  ...................      54 #
+#		Construcción de una Tupla  ...................   69-84 #
+#			MODO A  ..................................      71 #
+#			MODO B  ..................................      82 #
+#		Operaciones Básicas  .........................      89 #
 #	Iterar Por Medio de Ciclos while  ................     102 #
 #	Iterar Por Medio de Ciclos for 1/2  ..............     117 #
-#	Iterar Por Medio de Ciclos for 2/2  ..............     127 #
-#	    Función `enumerate()`  .......................     136 #
+#	Iterar Por Medio de Ciclos for 2/2  .............. 127-143 #
+#		Función `enumerate()`  .......................     136 #
 # ============================================================ #
 
 # ============================================================ #
@@ -46,10 +46,10 @@ print('El valor en y es igual a:', ordenada, '\n')
 #                  Acceso a Índices Negativos                  #
 # ============================================================ #
 
-penultimo_elemento = punto[-2]
-ultimo_elemento = punto[-1]
-print('El valor en x es igual a:', penultimo_elemento)
-print('El valor en y es igual a:', ultimo_elemento)
+penultimoElemento = punto[-2]
+ultimoElemento = punto[-1]
+print('El valor en x es igual a:', penultimoElemento)
+print('El valor en y es igual a:', ultimoElemento)
 
 # ============================================================ #
 #                   Concepto de Inmutabilidad                  #

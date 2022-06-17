@@ -1,22 +1,22 @@
 # ============================================================ #
 #							  ÍNDICE						   #
 # ------------------------------------------------------------ #
-#	Tipo de Dato set  ................................       ? #
-#	    Construcción de Conjuntos  ...................       ? #
-#	        a Partir de una Cadena de Caracteres  ....       ? #
-#	        a Partir de una Tupla  ...................       ? #
-#	    Métodos y Operadores  ........................       ? #
-#	        `add()` Agregar Elementos  ...............       ? #
-#	        `in` Operación de Pertenencia  ...........       ? #
-#	        `issubset()` Operación de Subconjunto  ...       ? #
-#	        `union()` Unión entre Conjuntos  .........       ? #
-#	        `intersection()` Intersección  ...........       ? #
-#	        `issuperset()` Superconjunto  ............       ? #
-#	        Diferencia de Conjuntos  .................       ? #
-#	        Diferencia Simétrica  ....................       ? #
-#	        Remover Elementos  .......................       ? #
-#   Iterar Por Medio de Ciclos for  ..................       ? #
-#       Función `enumerate()`  .......................       ? #
+#	Tipo de Dato set  ................................  22-231 #
+#		Construcción de Conjuntos  ...................   24-63 #
+#			a Partir de una Cadena de Caracteres  ....      40 #
+#			a Partir de una Tupla  ...................      51 #
+#		Métodos y Operadores  ........................  64-231 #
+#			`add()` Agregar Elementos  ...............      70 #
+#			`in` Operación de Pertenencia  ...........      84 #
+#			`issubset()` Operación de Subconjunto  ...     100 #
+#			`union()` Unión entre Conjuntos  .........     126 #
+#			`intersection()` Intersección  ...........     138 #
+#			`issuperset()` Superconjunto  ............     150 #
+#			Diferencia de Conjuntos  .................     170 #
+#			Diferencia Simétrica  ....................     189 #
+#			Remover Elementos  .......................     200 #
+#	Iterar Por Medio de Ciclos for  .................. 232-250 #
+#		Función `enumerate()`  .......................     241 #
 # ============================================================ #
 
 # ============================================================ #
@@ -27,15 +27,15 @@
 
 print('Creación de Conjuntos\n')
 
-conjunto_1 = {'Juan', 'Oliva', 'Edward', 'Daniela', 'Juan', 'Juan', 'Germán'}
-conjunto_2 = set(['Juan', 'Oliva', 'Edward',
-                 'Daniela', 'Juan', 'Juan', 'Germán'])
+conjuntoOne = {'Juan', 'Oliva', 'Edward', 'Daniela', 'Juan', 'Juan', 'Germán'}
+conjuntoTwo = set(['Juan', 'Oliva', 'Edward',
+				 'Daniela', 'Juan', 'Juan', 'Germán'])
 
-print('Contenido `conjunto_1`: {}'.format(conjunto_1))
-print('Tipo de dato `conjunto_1`: {}\n'.format(type(conjunto_2).__name__))
+print('Contenido `conjuntoOne`: {}'.format(conjuntoOne))
+print('Tipo de dato `conjuntoOne`: {}\n'.format(type(conjuntoTwo).__name__))
 
-print('Contenido `conjunto_2`: {}'.format(conjunto_2))
-print('Tipo de dato `conjunto_2`: {}'.format(type(conjunto_2).__name__))
+print('Contenido `conjuntoTwo`: {}'.format(conjuntoTwo))
+print('Tipo de dato `conjuntoTwo`: {}'.format(type(conjuntoTwo).__name__))
 
 # ============================================================ #
 #             a Partir de una Cadena de Caracteres             #
@@ -101,13 +101,13 @@ print('¿El color {} se encuentra del arcoíris?\n> {}'.format(color, result))
 #             `issubset()` Operación de Subconjunto            #
 # ============================================================ #
 
-colores_one = {'Rojo', 'Verde', 'Azul'}
-colores_two = {'Rojo', 'Verde', 'Azul'}
+coloresOne = {'Rojo', 'Verde', 'Azul'}
+coloresTwo = {'Rojo', 'Verde', 'Azul'}
 
-result_one = colores_one.issubset(arcoiris)
+result_one = coloresOne.issubset(arcoiris)
 
-colores_two.add('Gris')
-result_two = colores_two.issubset(arcoiris)
+coloresTwo.add('Gris')
+resultTwo = coloresTwo.issubset(arcoiris)
 
 empty = set([])
 result_three = empty.issubset(arcoiris)
@@ -115,13 +115,13 @@ result_three = empty.issubset(arcoiris)
 print('Operación de Subconjunto en un Conjunto\n')
 
 print('¿El conjunto {} es subconjunto de {}?\n> {}\n'.format(
-    colores_one, arcoiris, result_one))
+	coloresOne, arcoiris, result_one))
 
 print('¿El conjunto {} es subconjunto de {}?\n> {}\n'.format(
-    colores_two, arcoiris, result_two))
+	coloresTwo, arcoiris, resultTwo))
 
 print('¿El conjunto {} es subconjunto de {}?\n> {}'.format(
-    empty, arcoiris, result_three))
+	empty, arcoiris, result_three))
 
 # ============================================================ #
 #                `union()` Unión entre Conjuntos               #
@@ -131,9 +131,9 @@ colores = {'Rojo', 'Verde', 'Azul', 'Negros', 'Rosa'}
 
 print('Operaciones de Unión entre Conjuntos\n')
 
-union_colores = arcoiris.union(colores)
+unionColores = arcoiris.union(colores)
 
-print('Contenido `union_colores`: {}'.format(union_colores))
+print('Contenido `unionColores`: {}'.format(unionColores))
 
 # ============================================================ #
 #                 `intersection()` Intersección                #
@@ -151,21 +151,21 @@ print('Tipo de dato `interseccion`: {}'.format(type(interseccion).__name__))
 #                 `issuperset()` Superconjunto                 #
 # ============================================================ #
 
-colores_rgb = {'Rojo', 'Verde', 'Azul'}
+coloresRgb = {'Rojo', 'Verde', 'Azul'}
 
 print('Operación de Superconjunto\n')
 
-resultado = arcoiris.issuperset(colores_rgb)
+resultado = arcoiris.issuperset(coloresRgb)
 
 print('¿El conjunto {} es superconjunto de {}?\n> {}'.format(
-    arcoiris, colores_rgb, resultado))
+	arcoiris, coloresRgb, resultado))
 
-colores_rgb.add('Gris')
+coloresRgb.add('Gris')
 
-resultado = arcoiris.issuperset(colores_rgb)
+resultado = arcoiris.issuperset(coloresRgb)
 
 print('¿El conjunto {} es superconjunto de {}?\n> {}'.format(
-    arcoiris, colores_rgb, resultado))
+	arcoiris, coloresRgb, resultado))
 
 # ============================================================ #
 #                    Diferencia de Conjuntos                   #
@@ -192,10 +192,10 @@ print('La diferencia entre los conjuntos `arcoiris` y `colores` es: {}'.format(d
 
 print('Diferencia Simétrica\n')
 
-diferencia_simetrica = arcoiris.symmetric_difference(colores)
+diferenciaSimetrica = arcoiris.symmetric_difference(colores)
 
 print('La diferencia simétrica entre los conjuntos `arco_iris` y `colores` es:',
-      diferencia_simetrica)
+	  diferenciaSimetrica)
 
 # ============================================================ #
 #                       Remover Elementos                      #
@@ -236,7 +236,7 @@ print('Contenido `clear`:', clear)
 print('Iterar o Recorrer un Conjunto')
 
 for c in arcoiris:
-    print('Color {}'.format(c))
+	print('Color {}'.format(c))
 
 # ============================================================ #
 #                     Función `enumerate()`                    #
@@ -245,6 +245,6 @@ for c in arcoiris:
 print('Iterar o Recorrer un Conjunto con la Función `enumerate()`\n')
 
 for i, c in enumerate(arcoiris):
-    print(f'Índice: {i} - Valor: {c}')
+	print(f'Índice: {i} - Valor: {c}')
 
 # NOTA IMPORTANTE: En un conjunto no existe la noción o el concepto de orden.

@@ -1,11 +1,11 @@
 # ============================================================ #
 #							  ÍNDICE						   #
 # ------------------------------------------------------------ #
-#	Tipo de Dato str  ................................      15 #
-#	    Construcción de una Cadena de Caracteres  ....   29-53 #
+#	Tipo de Dato str  ................................  15-104 #
+#	    Construcción de una Cadena de Caracteres  ....   29-58 #
 #	        Interpolación  ...........................      37 #
-#	        `format()`  ..............................      44 #
-#	        Formateo con % o Módulo  .................      51 #
+#	        `format()`  ..............................      45 #
+#	        Formateo con % o Módulo  .................      53 #
 #	    Concepto de Inmutabilidad 1/2  ...............      59 #
 #	    Concepto de Inmutabilidad 2/2  ...............      77 #
 #	    Operaciones Básicas  .........................      86 #
@@ -37,6 +37,7 @@ print(mensaje, '\n')
 # ============================================================ #
 #                         Interpolación                        #
 # ============================================================ #
+
 print('Interpolación:\n')
 mensaje = f'Bienvenido(a), {nombre}. Correo: {email}'
 print(mensaje, '\n')
@@ -44,6 +45,7 @@ print(mensaje, '\n')
 # ============================================================ #
 #                          `format()`                          #
 # ============================================================ #
+
 print('format() de la clase str:\n')
 mensaje = 'Bienvenido(a), {}. Correo: {}'.format(nombre, email)
 print(mensaje, '\n')
